@@ -28,6 +28,166 @@
     <script src="js/tailwind.config.js"></script>
   </head>
   <body class="font-inter">
+    <header class="font-railway py-5">
+      <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="lg:text-4xl text-[#030712] font-extrabold">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul
+              class="lg:text-lg font-medium text-[#030712B3] menu menu-horizontal px-1"
+            >
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn text-[#1DD100] lg:px-6 lg:text-xl font-bold border border-[#1dd10066] bg-[#1dd1001a]"
+              >Bus <i class="fa-solid fa-van-shuttle text-[#1DD100]"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ===== HERO SECTION ======= -->
+      <section>
+        <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
+          <div
+            class="hero h-[550px] font-inter"
+            style="background-image: url(images/banner.png)"
+          >
+            <div class="hero-overlay bg-opacity-30 rounded-3xl"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="lg:max-w-[70%] text-white">
+                <h1 class="mb-5 text-5xl font-extrabold lg:text-6xl">
+                  End-to-End Travel with <br /><span class="text-[#1DD100]"
+                    >P Paribahan</span
+                  >
+                </h1>
+                <p class="mb-5 text-lg lg:max-w-[90%] lg:mx-auto">
+                  Yes, you can run unit tests and view the results directly
+                  within the app. The integrated testing features allow for a
+                  streamlined .
+                </p>
+                <button
+                  class="btn text-xl font-railway font-bold px-7 text-[#030712] bg-[#1DD100] border-0"
+                >
+                  Buy Tickets
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- numbers -->
+          <!--  -->
+        </div>
+      </section>
+
+      <section class="py-20">
+        <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
+          <h1
+            class="text-center pb-10 font-railway font-bold text-[40px] text-[#030712]"
+          >
+            Best offers for you
+          </h1>
+          <div class="coupon-card-content grid grid-cols-2 gap-8">
+            <div
+              class="coupon-card yellow-coupon bg-[#FFBF0F] flex justify-evenly items-center rounded-3xl"
+            >
+              <div
+                class="coupon-left-content font-inter py-10 border-r-2 border-dashed pr-16"
+              >
+                <p class="font-medium text-lg text-[#03071280] leading-10">
+                  <span class="font-black text-[40px] text-[#030712cc]"
+                    >15% OFF</span
+                  >
+                  <br />
+                  <span class="font-semibold text-xl text-[#030712cc]"
+                    >on your next purchase</span
+                  >
+                  <br />
+                  use by January 2024
+                </p>
+              </div>
+              <div class="coupon-right-content font-railway">
+                <p class="font-bold text-[32px] text-[#030712] leading-9">
+                  NEW15 <br />
+                  <span class="text-[#03071266] text-xl font-medium">
+                    Coupon Code</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div
+              class="coupon-card pink-coupon bg-[#F78C9C] flex justify-evenly items-center rounded-3xl"
+            >
+              <div
+                class="coupon-left-content font-inter py-10 border-r-2 border-dashed pr-16"
+              >
+                <p class="font-medium text-lg text-[#03071280] leading-10">
+                  <span class="font-black text-[40px] text-[#030712cc]"
+                    >20% OFF</span
+                  >
+                  <br />
+                  <span class="font-semibold text-xl text-[#030712cc]"
+                    >on your next purchase</span
+                  >
+                  <br />
+                  use by January 2024
+                </p>
+              </div>
+              <div class="coupon-right-content font-railway">
+                <p class="font-bold text-[32px] text-[#040406] leading-9">
+                  Couple 20<br />
+                  <span class="text-[#03071266] text-xl font-medium">
+                    Coupon Code</span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="text-center pt-16">
+            <button
+              class="btn btn-outline border-[#1DD100] text-[#1DD100] font-railway font-bold text-xl px-7"
+            >
+              See All Offers
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
     <script src="js/common.js"></script>
     <script src="js/style.js"></script>
   </body>
