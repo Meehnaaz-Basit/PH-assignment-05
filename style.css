@@ -8,3 +8,8 @@
 .font-inter {
   font-family: "Inter", sans-serif;
 }
+.seat-selected {
+  background-color: #1dd100 !important;
+  color: white !important;
+  cursor: not-allowed;
+}
