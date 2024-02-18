@@ -234,7 +234,7 @@
                     >
                       <img src="images/seat-green.png" alt="" class="mr-2" />
                       <p class="font-inter text-lg font-medium text-[#1DD100]">
-                        <span id="seat-count">40</span>
+                        <span id="seat-remain">40</span>
                         Seats left
                       </p>
                     </div>
@@ -324,7 +324,7 @@
               <div class="seat-buttons py-8">
                 <div class="seat flex items-center justify-end mb-8">
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-10"
+                    class="btn hover:bg-[#1DD100] hover:text-white px-10"
                     disabled
                   >
                     <img src="images/wheel.png" alt="" />
@@ -342,6 +342,7 @@
                   </button>
                   <button
                     class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12 seat-selected"
+                    disabled
                   >
                     A2
                   </button>
@@ -461,8 +462,10 @@
                           <th>
                             Seat
                             <span
-                              ><sup class="badge bg-[#1dd100] text-white"
-                                >2</sup
+                              ><sup
+                                id="seat-increase"
+                                class="badge bg-[#1dd100] text-white"
+                                >0</sup
                               ></span
                             >
                           </th>
