@@ -18,6 +18,7 @@ for (const seatBtn of seatBtnAll) {
       alert("No seat is available");
     } else {
       seatIncrease.innerText = seatNum;
+      seatBtn.classList.add("seat-selected");
     }
   });
 }
