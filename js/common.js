@@ -87,15 +87,13 @@ for (const seatButton of seatButtons) {
     //--------------- next btn ------------ problem ----
     const nextBtn = document.getElementById("next-btn");
     const phoneNumInput = document.getElementById("phone-number-input");
-
-    // if (
-    //   seatButton.classList.contains("seat-selected") &&
-    //   phoneNumInput !== null
-    // ) {
-    //   nextBtn.removeAttribute("disabled");
-    // } else {
-    //   nextBtn.setAttribute("disabled", true);
-    // }
+    const phoneValue = parseInt(phoneNumInput.value);
+    console.log(phoneValue);
+    if (seatButton.classList.contains("seat-selected") && phoneValue > -1) {
+      nextBtn.removeAttribute("disabled");
+    } else {
+      nextBtn.setAttribute("disabled", true);
+    }
     // --------------------------------------------
 
     // Alert if no seats are available

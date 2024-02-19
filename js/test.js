@@ -24,10 +24,11 @@ for (const seatButton of seatButtons) {
     // Increase selected seats
     selectedSeats++;
 
-    // seat
+    // Update seat information
     const remainingSeatsElement = document.getElementById("seat-remain");
     const selectedSeatsElement = document.getElementById("seat-increase");
 
+    // Inner Text
     remainingSeatsElement.innerText = availableSeats;
     selectedSeatsElement.innerText = selectedSeats;
 
@@ -42,20 +43,14 @@ for (const seatButton of seatButtons) {
           remainingSeatButton.setAttribute("disabled", true);
         }
       }
-
       couponBtn.removeAttribute("disabled");
       alert("You have reached the maximum number of tickets (4).");
     }
 
-    // table data cell update///
+    // Update table data cell
     const table = document.getElementById("table");
-    // table body
     const tBody = document.getElementById("t-body");
-
-    // create table row
-
     const tr = document.createElement("tr");
-    // create table data
 
     const seatTd = document.createElement("td");
     seatTd.textContent = seatButton.innerText;
@@ -68,56 +63,25 @@ for (const seatButton of seatButtons) {
     const costTd = document.createElement("td");
     costTd.textContent = ticketPrice;
     tr.appendChild(costTd);
-    // console.log(td.innerText);
 
-    // append data
     tBody.appendChild(tr);
 
-    // Total price update
+    // Update total price
     totalPrice = totalPrice + ticketPrice;
     const price = document.getElementById("total-price");
     price.innerText = totalPrice;
-    // console.log(typeof totalPrice, totalPrice);
 
-    // grand total price update
+    // Update grand total price
     grandTotal = totalPrice - discountPrice;
     const grandTotalPrice = document.getElementById("grand-total");
     grandTotalPrice.innerText = grandTotal;
-
-    //--------------- next btn ------------ problem ----
-    const nextBtn = document.getElementById("next-btn");
-    const phoneNumInput = document.getElementById("phone-number-input");
-
-    // if (
-    //   seatButton.classList.contains("seat-selected") &&
-    //   phoneNumInput !== null
-    // ) {
-    //   nextBtn.removeAttribute("disabled");
-    // } else {
-    //   nextBtn.setAttribute("disabled", true);
-    // }
-    // --------------------------------------------
-
-    // Alert if no seats are available
-    if (availableSeats < 0) {
-      alert("No seat is available");
-      // Changing the state
-      availableSeats++;
-      selectedSeats--;
-      remainingSeatsElement.innerText = availableSeats;
-      selectedSeatsElement.innerText = selectedSeats;
-      seatButton.classList.remove("seat-selected");
-    }
   });
 }
 
-// discount price update
-
-const couponBtn = document.getElementById("coupon-btn");
-const couponInput = document.getElementById("coupon-input");
-
 // Add event listener to the coupon
+const couponBtn = document.getElementById("coupon-btn");
 couponBtn.addEventListener("click", function () {
+  const couponInput = document.getElementById("coupon-input");
   const couponCode = couponInput.value;
   const discount = document.getElementById("discount");
   const couponSection = document.getElementById("coupon-section");
@@ -137,15 +101,28 @@ couponBtn.addEventListener("click", function () {
     alert("Invalid Coupon Code");
     couponInput.value = "";
   }
-  // grand total after applying the discount
+
+  // Update grand total after applying the discount
   grandTotal = totalPrice - discountPrice;
   const grandTotalPrice = document.getElementById("grand-total");
   grandTotalPrice.innerText = grandTotal;
 });
 
-//  Add event listener to the next button
-const nextBtn = document.getElementById("next-btn");
+// Add event listener to the phone number input
+const phoneNumInput = document.getElementById("phone-number-input");
+phoneNumInput.addEventListener("input", function () {
+  const nextBtn = document.getElementById("next-btn");
+  const phoneValue = parseInt(phoneNumInput.value);
 
+  if (selectedSeats > 0 && phoneValue !== -1 && phoneNumInput.value !== "") {
+    nextBtn.removeAttribute("disabled");
+  } else {
+    nextBtn.setAttribute("disabled", true);
+  }
+});
+
+// Add event listener to the next button
+const nextBtn = document.getElementById("next-btn");
 nextBtn.addEventListener("click", function () {
   const header = document.getElementById("header");
   const main = document.getElementById("main");
