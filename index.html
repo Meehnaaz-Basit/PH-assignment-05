@@ -28,7 +28,7 @@
     <script src="js/tailwind.config.js"></script>
   </head>
   <body class="font-inter">
-    <header class="font-railway py-5">
+    <header id="header" class="font-railway py-5">
       <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -80,7 +80,7 @@
         </div>
       </div>
     </header>
-    <main>
+    <main id="main">
       <!-- ===== HERO SECTION ======= -->
       <section>
         <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
@@ -696,7 +696,7 @@
                 <div
                   class="grand-total-section mt-6 flex justify-between px-2 py-2 *:text-base *:font-inter *:font-medium *:text-[#030712]"
                 >
-                  <div>Grand Price</div>
+                  <div>Grand Total</div>
                   <div>
                     <p>BDT <span id="grand-total">0</span></p>
                   </div>
@@ -704,10 +704,11 @@
               </div>
               <!-- form -->
               <div class="info-form py-8">
-                <form>
+                <!-- form -->
+                <div>
                   <div class="mb-6">
                     <label class="font-inter font-semibold text-[#030712]"
-                      >Passenger Name*</label
+                      >Passenger Name</label
                     >
                     <input
                       class="font-inter text-[#03071266] border border-[#0307121A] w-full p-3 rounded-xl mt-3"
@@ -721,6 +722,7 @@
                       >Phone Number*</label
                     >
                     <input
+                      id="phone-number-input"
                       class="font-inter text-[#03071266] border border-[#0307121A] w-full p-3 rounded-xl mt-3"
                       type="number"
                       placeholder="Enter your phone number"
@@ -738,12 +740,15 @@
                     />
                   </div>
                   <button
+                    id="next-btn"
                     class="btn w-full bg-[#1dd100] text-white rounded-2xl font-railway text-base"
+                    disabled
                   >
                     Next
                   </button>
                   <!--  -->
-                </form>
+                </div>
+                <!-- form ends -->
               </div>
               <!-- terms -->
               <div
@@ -758,7 +763,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-[#030712] text-[white] py-32">
+    <footer id="footer" class="bg-[#030712] text-[white] py-32">
       <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
         <div class="flex justify-between">
           <div>
@@ -801,7 +806,7 @@
     <!-- pop up -->
     <section
       id="pop-up"
-      class="bg-[#F7F8F8] min-h-screen flex justify-center items-center font-railway"
+      class="bg-[#F7F8F8] min-h-screen flex justify-center items-center font-railway hidden"
     >
       <div
         class="bg-[white] p-20 lg:w-[55%] m-auto text-center space-y-5 rounded-3xl"
@@ -827,7 +832,7 @@
       </div>
     </section>
     <!-- pop up ends -->
-    <script src="js/common.js"></script>
-    <!-- <script src="js/test.js"></script> -->
+    <!-- <script src="js/common.js"></script> -->
+    <script src="js/test.js"></script>
   </body>
 </html>
