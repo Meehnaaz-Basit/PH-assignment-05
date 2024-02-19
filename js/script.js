@@ -45,7 +45,7 @@ for (const seatButton of seatButtons) {
       }
       couponBtn.removeAttribute("disabled");
       alert(
-        "Thanks for reaching the 4-ticket limit! Now you can enjoy savings with your coupon code."
+        "You have reached the 4-ticket limit!! \n Also now you can enjoy savings with your coupon code."
       );
     }
 
