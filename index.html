@@ -500,23 +500,26 @@
                   </div>
                 </div>
                 <!-- coupon -->
-                <div class="coupon-section my-3">
-                  <form class="flex">
+                <div id="coupon-section" class="coupon-section my-3">
+                  <div class="flex">
                     <input
-                      class="w-full rounded-l-lg px-4"
+                      id="coupon-input"
+                      class="w-full rounded-lg px-4"
                       type="text"
                       placeholder="Have any coupon?"
                     />
                     <button
-                      class="btn coupon-btn bg-[#1dd100] text-white -ml-3"
+                      id="coupon-btn"
+                      class="btn coupon-btn bg-[#1dd100] text-white"
+                      disabled
                     >
                       Apply
                     </button>
-                  </form>
+                  </div>
                 </div>
                 <!-- discount -->
                 <div
-                  class="hidden discount-section flex justify-between px-2 py-2 *:text-base *:font-inter *:font-medium *:text-[#030712]"
+                  class="discount-section flex justify-between px-2 py-2 *:text-base *:font-inter *:font-medium *:text-[#030712]"
                 >
                   <div>Discount</div>
                   <div>
@@ -590,7 +593,7 @@
       </section>
     </main>
     <footer></footer>
-    <!-- <script src="js/common.js"></script> -->
-    <script src="js/test.js"></script>
+    <script src="js/common.js"></script>
+    <!-- <script src="js/test.js"></script> -->
   </body>
 </html>

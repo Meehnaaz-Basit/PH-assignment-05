@@ -2,6 +2,9 @@ let selectedSeats = 0;
 let availableSeats = 8;
 const maxSelectedSeats = 4;
 let ticketPrice = 550;
+let totalPrice = 0;
+let grandTotal = 0;
+let discountPrice = 0;
 
 // Get all seat buttons
 const seatButtons = document.getElementsByClassName("seat-btn");
@@ -32,13 +35,16 @@ for (const seatButton of seatButtons) {
     seatButton.classList.add("seat-selected");
 
     // Disable remaining seats if reached max seat
+    const couponBtn = document.getElementById("coupon-btn");
     if (selectedSeats >= maxSelectedSeats) {
       for (const remainingSeatButton of seatButtons) {
         if (!remainingSeatButton.classList.contains("seat-selected")) {
           remainingSeatButton.setAttribute("disabled", true);
         }
       }
-      alert("Now you have reached the maximum number of tickets (4).");
+
+      couponBtn.removeAttribute("disabled");
+      alert("You have reached the maximum number of tickets (4).");
     }
 
     // table data cell update///
@@ -67,6 +73,17 @@ for (const seatButton of seatButtons) {
     // append data
     tBody.appendChild(tr);
 
+    // Total price update
+    totalPrice = totalPrice + ticketPrice;
+    const price = document.getElementById("total-price");
+    price.innerText = totalPrice;
+    // console.log(typeof totalPrice, totalPrice);
+
+    // grand total price update
+    grandTotal = totalPrice - discountPrice;
+    const grandTotalPrice = document.getElementById("grand-total");
+    grandTotalPrice.innerText = grandTotal;
+
     // Alert if no seats are available
     if (availableSeats < 0) {
       alert("No seat is available");
@@ -79,3 +96,29 @@ for (const seatButton of seatButtons) {
     }
   });
 }
+
+// discount price update
+
+const couponBtn = document.getElementById("coupon-btn");
+const couponInput = document.getElementById("coupon-input");
+const discount = document.getElementById("discount");
+
+// Add event listener to the coupon
+couponBtn.addEventListener("click", function () {
+  const couponCode = couponInput.value; // Get the value of the input
+
+  if (couponCode === "NEW15") {
+    discountPrice = totalPrice * (15 / 100);
+    discount.innerText = discountPrice;
+  } else if (couponCode === "Couple 20") {
+    discountPrice = totalPrice * (20 / 100);
+    discount.innerText = discountPrice;
+  } else {
+    alert("Invalid Coupon Code");
+    couponInput.value = "";
+  }
+  // grand total after applying the discount
+  grandTotal = totalPrice - discountPrice;
+  const grandTotalPrice = document.getElementById("grand-total");
+  grandTotalPrice.innerText = grandTotal;
+});

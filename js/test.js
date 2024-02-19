@@ -35,12 +35,15 @@ for (const seatButton of seatButtons) {
     seatButton.classList.add("seat-selected");
 
     // Disable remaining seats if reached max seat
+    const couponBtn = document.getElementById("coupon-btn");
     if (selectedSeats >= maxSelectedSeats) {
       for (const remainingSeatButton of seatButtons) {
         if (!remainingSeatButton.classList.contains("seat-selected")) {
           remainingSeatButton.setAttribute("disabled", true);
         }
       }
+
+      couponBtn.removeAttribute("disabled");
       alert("You have reached the maximum number of tickets (4).");
     }
 
@@ -76,12 +79,11 @@ for (const seatButton of seatButtons) {
     price.innerText = totalPrice;
     // console.log(typeof totalPrice, totalPrice);
 
-    // discount price update
-
     // grand total price update
     grandTotal = totalPrice - discountPrice;
     const grandTotalPrice = document.getElementById("grand-total");
     grandTotalPrice.innerText = grandTotal;
+
     // Alert if no seats are available
     if (availableSeats < 0) {
       alert("No seat is available");
@@ -94,3 +96,29 @@ for (const seatButton of seatButtons) {
     }
   });
 }
+
+// discount price update
+
+const couponBtn = document.getElementById("coupon-btn");
+const couponInput = document.getElementById("coupon-input");
+const discount = document.getElementById("discount");
+
+// Add event listener to the coupon
+couponBtn.addEventListener("click", function () {
+  const couponCode = couponInput.value; // Get the value of the input
+
+  if (couponCode === "NEW15") {
+    discountPrice = totalPrice * (15 / 100);
+    discount.innerText = discountPrice;
+  } else if (couponCode === "Couple 20") {
+    discountPrice = totalPrice * (20 / 100);
+    discount.innerText = discountPrice;
+  } else {
+    alert("Invalid Coupon Code");
+    couponInput.value = "";
+  }
+  // grand total after applying the discount
+  grandTotal = totalPrice - discountPrice;
+  const grandTotalPrice = document.getElementById("grand-total");
+  grandTotalPrice.innerText = grandTotal;
+});
