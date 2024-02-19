@@ -28,7 +28,7 @@
     <script src="js/tailwind.config.js"></script>
   </head>
   <body class="font-inter">
-    <header id="header" class="font-railway py-5">
+    <header id="header" class="font-railway lg:py-5 py-3">
       <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -59,7 +59,9 @@
                 <li><a>Search</a></li>
               </ul>
             </div>
-            <a class="lg:text-4xl text-[#030712] font-extrabold">P-Ticket</a>
+            <a class="lg:text-4xl text-2xl text-[#030712] font-extrabold"
+              >P-Ticket</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul
@@ -91,12 +93,12 @@
             <div class="hero-overlay bg-opacity-30 rounded-3xl"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="lg:max-w-[70%] text-white">
-                <h1 class="mb-5 text-5xl font-extrabold lg:text-6xl">
+                <h1 class="mb-5 text-3xl font-extrabold lg:text-6xl">
                   End-to-End Travel with <br /><span class="text-[#1DD100]"
                     >P Paribahan</span
                   >
                 </h1>
-                <p class="mb-5 text-lg lg:max-w-[90%] lg:mx-auto">
+                <p class="mb-5 lg:text-lg lg:max-w-[90%] lg:mx-auto">
                   Yes, you can run unit tests and view the results directly
                   within the app. The integrated testing features allow for a
                   streamlined .
@@ -115,14 +117,14 @@
         </div>
       </section>
       <!--  ========= coupon section ======= -->
-      <section class="py-20">
+      <section class="py-12 lg:py-20">
         <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
           <h1
-            class="text-center pb-10 font-railway font-bold text-[40px] text-[#030712]"
+            class="text-center pb-10 font-railway font-bold text-3xl lg:text-[40px] text-[#030712]"
           >
             Best offers for you
           </h1>
-          <div class="coupon-card-content grid grid-cols-2 gap-8">
+          <div class="coupon-card-content grid lg:grid-cols-2 gap-8">
             <!-- yellow coupon -->
             <div
               class="coupon-card yellow-coupon bg-[#FFBF0F] flex justify-evenly items-center rounded-3xl relative"
@@ -131,22 +133,32 @@
                 <img src="images/cupon-devider.png" alt="" />
               </div>
               <div class="coupon-left-content font-inter py-10">
-                <p class="font-medium text-lg text-[#03071280] leading-10">
-                  <span class="font-black text-[40px] text-[#030712cc]"
+                <p
+                  class="font-medium text-base lg:text-lg text-[#03071280] leading-10"
+                >
+                  <span
+                    class="font-black text-3xl lg:text-[40px] text-[#030712cc]"
                     >15% OFF</span
                   >
                   <br />
-                  <span class="font-semibold text-xl text-[#030712cc]"
+                  <span
+                    class="font-semibold text-lg lg:text-xl text-[#030712cc]"
                     >on your next purchase</span
                   >
                   <br />
                   use by January 2024
                 </p>
               </div>
-              <div class="coupon-right-content font-railway">
-                <p class="font-bold text-[32px] text-[#030712] leading-9">
+              <div
+                class="coupon-right-content font-railway lg:pl-16 text-center"
+              >
+                <p
+                  class="font-bold text-2xl lg:text-[32px] text-[#030712] leading-9"
+                >
                   NEW15 <br />
-                  <span class="text-[#03071266] text-xl font-medium">
+                  <span
+                    class="text-[#03071266] text-base lg:text-xl font-medium"
+                  >
                     Coupon Code</span
                   >
                 </p>
@@ -162,22 +174,32 @@
                 <img src="images/cupon-devider.png" alt="" />
               </div>
               <div class="coupon-left-content font-inter py-10">
-                <p class="font-medium text-lg text-[#03071280] leading-10 mb-0">
-                  <span class="font-black text-[40px] text-[#030712cc]"
+                <p
+                  class="font-medium text-base lg:text-lg text-[#03071280] leading-10 mb-0"
+                >
+                  <span
+                    class="font-black text-3xl lg:text-[40px] text-[#030712cc]"
                     >20% OFF</span
                   >
                   <br />
-                  <span class="font-semibold text-xl text-[#030712cc]"
+                  <span
+                    class="font-semibold text-lg lg:text-xl text-[#030712cc]"
                     >on your next purchase</span
                   >
                   <br />
                   use by January 2024
                 </p>
               </div>
-              <div class="coupon-right-content font-railway">
-                <p class="font-bold text-[32px] text-[#040406] leading-9">
+              <div
+                class="coupon-right-content font-railway lg:pl-16 text-center"
+              >
+                <p
+                  class="font-bold text-2xl lg:text-[32px] text-[#040406] leading-9"
+                >
                   Couple 20<br />
-                  <span class="text-[#03071266] text-xl font-medium">
+                  <span
+                    class="text-[#03071266] text-base lg:text-xl font-medium"
+                  >
                     Coupon Code</span
                   >
                 </p>
@@ -200,7 +222,7 @@
         class="bg-[#F7F8F8] py-16 border-t border-[#1dd100] rounded-t-[60px]"
       >
         <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
-          <div class="heading text-center max-w-[65%] mx-auto">
+          <div class="heading text-center lg:max-w-[65%] mx-auto">
             <h1 class="font-railway text-4xl font-bold text-[#030712] pb-6">
               P.H Paribahan
             </h1>
@@ -210,13 +232,19 @@
             </p>
           </div>
           <!-- ticket -->
-          <div class="ticket-body bg-white rounded-3xl relative p-8 mt-10">
-            <div class="ticket-info flex justify-around items-center">
+          <div
+            class="ticket-body bg-white rounded-3xl relative lg:p-8 py-6 mt-10"
+          >
+            <div
+              class="ticket-info flex lg:flex-row flex-col justify-around items-center"
+            >
               <!-- left -->
               <div class="ticket-left-info">
-                <div class="ticket-title flex justify-between items-center">
+                <div
+                  class="ticket-title flex lg:flex-row flex-col justify-between items-center"
+                >
                   <div class="ticket-name">
-                    <div class="flex items-center">
+                    <div class="flex lg:flex-row flex-col items-center">
                       <div class="mr-4">
                         <img src="images/bus-logo.png" alt="" />
                       </div>
@@ -262,7 +290,7 @@
                   </div>
                   <div class="border-2 border-dashed border-[#03071233]"></div>
                   <div
-                    class="destination font-inter font-medium text-[#030712CC] text-base flex justify-between gap-8"
+                    class="destination font-inter font-medium text-[#030712CC] text-base flex lg:flex-row flex-col justify-between gap-8"
                   >
                     <div class="badge bg-[#0307120D] p-6 rounded-xl">
                       Boarding Point - Laxmipur
@@ -298,10 +326,10 @@
           <!-- ticket ends -->
           <!-- seat  -->
           <div
-            class="seat-container bg-white mt-8 rounded-3xl p-10 flex justify-between"
+            class="seat-container bg-white mt-8 rounded-3xl lg:p-10 p-4 flex lg:flex-row flex-col justify-between"
           >
             <!-- left -->
-            <div class="seat-left-content w-7/12 px-10">
+            <div class="seat-left-content lg:w-7/12 w-12/12 lg:px-10">
               <h1
                 class="font-railway text-2xl font-semibold text-[#030712] pb-4"
               >
@@ -336,27 +364,27 @@
                 </div>
                 <!-- a -->
                 <div
-                  class="seat *:text-[#03071280] font-inter text-lg font-medium flex items-center justify-between mb-8"
+                  class="seat *:text-[#03071280] font-inter text-lg font-medium flex items-center justify-between gap-2 mb-8"
                 >
                   <span>A</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:lg:px-12 px-6 px-6"
                   >
                     A1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:lg:px-12 px-6 px-6"
                   >
                     A2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:lg:mx-3 mx-1 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:lg:px-12 px-6 px-6"
                   >
                     A3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:lg:px-12 px-6 px-6"
                   >
                     A4
                   </button>
@@ -367,23 +395,23 @@
                 >
                   <span>B</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     B1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     B2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     B3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     B4
                   </button>
@@ -394,23 +422,23 @@
                 >
                   <span>C</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     C1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     C2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     C3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     C4
                   </button>
@@ -421,23 +449,23 @@
                 >
                   <span>D</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     D1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     D2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     D3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     D4
                   </button>
@@ -448,23 +476,23 @@
                 >
                   <span>E</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     E1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     E2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     E3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     E4
                   </button>
@@ -475,23 +503,23 @@
                 >
                   <span>F</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     F1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     F2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     F3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     F4
                   </button>
@@ -502,23 +530,23 @@
                 >
                   <span>G</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     G1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     G2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     G3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     G4
                   </button>
@@ -529,23 +557,23 @@
                 >
                   <span>H</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     H1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     H2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     H3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     H4
                   </button>
@@ -556,23 +584,23 @@
                 >
                   <span>I</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     I1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     I2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     I3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     I4
                   </button>
@@ -583,23 +611,23 @@
                 >
                   <span>J</span>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     J1
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     J2
                   </button>
-                  <div class="mx-3"></div>
+                  <div class="lg:mx-3 mx-1"></div>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     J3
                   </button>
                   <button
-                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white px-12"
+                    class="btn seat-btn hover:bg-[#1DD100] hover:text-white lg:px-12 px-6"
                   >
                     J4
                   </button>
@@ -608,7 +636,7 @@
             </div>
             <!-- right -->
             <div
-              class="seat-right-container w-5/12 px-6 border-l border-dashed"
+              class="seat-right-container lg:w-5/12 w-12/12 lg:px-6 px-2 lg:border-l lg:border-dashed"
             >
               <h1
                 class="font-railway text-2xl font-semibold text-[#030712] pb-4"
@@ -765,7 +793,7 @@
     </main>
     <footer id="footer" class="bg-[#030712] text-[white] py-32">
       <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
-        <div class="flex justify-between">
+        <div class="flex lg:flex-row flex-col lg:gap0 gap-12 justify-between">
           <div>
             <h1 class="font-railway font-extrabold text-3xl">P-Ticket</h1>
             <p class="font-inter text-[#FFFFFFCC] text-lg mt-4">
@@ -776,7 +804,9 @@
 
           <div class="">
             <p class="font-railway font-semibold text-xl">Download our app</p>
-            <div class="flex items-center border-2 px-4 py-2 rounded-xl mt-4">
+            <div
+              class="flex items-center border-2 px-4 py-2 rounded-xl mt-4 w-fit"
+            >
               <div><img src="images/playstore.png" alt="" /></div>
               <div class="ml-4 font-railway">
                 <p class="text-base font-bold">GET IT ON</p>
@@ -786,14 +816,16 @@
           </div>
         </div>
         <div class="border-[#FFFFFF4D] border border-dashed w-full mt-12"></div>
-        <div class="flex justify-between mt-12">
+        <div class="flex flex-col-reverse lg:flex-row justify-between mt-12">
           <div>
-            <p class="font-inter text-[#FFFFFFB3]">
-              @all rights reserved, P-Ticket services limited.2024
+            <p class="font-inter text-[#FFFFFFB3] lg:mt-0 mt-16">
+              @all rights reserved, Meehnaaz Basit. 2024
             </p>
           </div>
           <div>
-            <div class="*:ml-6 *:foni-inter *:font-medium">
+            <div
+              class="*:foni-inter *:font-medium flex lg:flex-row flex-col gap-5"
+            >
               <a href="#">Terms & condition</a>
               <a href="#">Return & refund policy</a>
               <a href="#">Privacy policy</a>
