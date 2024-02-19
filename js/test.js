@@ -102,17 +102,23 @@ for (const seatButton of seatButtons) {
 const couponBtn = document.getElementById("coupon-btn");
 const couponInput = document.getElementById("coupon-input");
 const discount = document.getElementById("discount");
+const couponSection = document.getElementById("coupon-section");
+const discountSection = document.getElementById("discount-section");
 
 // Add event listener to the coupon
 couponBtn.addEventListener("click", function () {
-  const couponCode = couponInput.value; // Get the value of the input
+  const couponCode = couponInput.value;
 
   if (couponCode === "NEW15") {
     discountPrice = totalPrice * (15 / 100);
     discount.innerText = discountPrice;
+    couponSection.classList.add("hidden");
+    discountSection.classList.remove("hidden");
   } else if (couponCode === "Couple 20") {
     discountPrice = totalPrice * (20 / 100);
     discount.innerText = discountPrice;
+    couponSection.classList.add("hidden");
+    discountSection.classList.remove("hidden");
   } else {
     alert("Invalid Coupon Code");
     couponInput.value = "";

@@ -519,7 +519,8 @@
                 </div>
                 <!-- discount -->
                 <div
-                  class="discount-section flex justify-between px-2 py-2 *:text-base *:font-inter *:font-medium *:text-[#030712]"
+                  id="discount-section"
+                  class="hidden discount-section flex justify-between px-2 py-2 *:text-base *:font-inter *:font-medium *:text-[#030712]"
                 >
                   <div>Discount</div>
                   <div>
@@ -593,6 +594,36 @@
       </section>
     </main>
     <footer></footer>
+
+    <!-- pop up -->
+    <section
+      id="pop-up"
+      class="bg-[#F7F8F8] min-h-screen flex justify-center items-center font-railway"
+    >
+      <div
+        class="bg-[white] p-20 lg:w-[55%] m-auto text-center space-y-5 rounded-3xl"
+      >
+        <div class="flex justify-center mb-4">
+          <img src="images/success.png" alt="" />
+        </div>
+
+        <h1 class="text-2xl text-[#27AE60] font-bold">SUCCESS</h1>
+        <p class="text-xl text-[#4A4A4A] font-semibold">
+          Thank you for Booking Our Bus Seats. <br />
+          We are working hard to find the best service and deals for you.
+          <br />
+          <span class="font-light"
+            >Shortly you will find a confirmation in your email.</span
+          >
+        </p>
+        <button
+          class="btn btn-wide bg-[#27AE60] text-white rounded-full text-xl font-semibold"
+        >
+          Continue
+        </button>
+      </div>
+    </section>
+    <!-- pop up ends -->
     <script src="js/common.js"></script>
     <!-- <script src="js/test.js"></script> -->
   </body>
