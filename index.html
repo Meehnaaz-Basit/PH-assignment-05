@@ -101,11 +101,12 @@
                   within the app. The integrated testing features allow for a
                   streamlined .
                 </p>
-                <button
+                <a
+                  href="#ticket-section"
                   class="btn text-xl font-railway font-bold px-7 text-[#030712] bg-[#1DD100] border-0"
                 >
                   Buy Tickets
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -193,8 +194,8 @@
           </div>
         </div>
       </section>
-      <!-- ========== -->
-      <section class="bg-[#F7F8F8] py-10">
+      <!-- ===== Ticket section ===== -->
+      <section id="ticket-section" class="bg-[#F7F8F8] py-10">
         <div class="container mx-auto max-w-[1200px] w-[90%] lg-w[84%]">
           <div class="heading text-center max-w-[65%] mx-auto">
             <h1 class="font-railway text-4xl font-bold text-[#030712] pb-6">
@@ -495,7 +496,7 @@
                 >
                   <div>Total Price</div>
                   <div>
-                    <p>BDT <span>1100</span></p>
+                    <p>BDT <span id="total-price">0</span></p>
                   </div>
                 </div>
                 <!-- coupon -->
@@ -513,13 +514,22 @@
                     </button>
                   </form>
                 </div>
+                <!-- discount -->
+                <div
+                  class="hidden discount-section flex justify-between px-2 py-2 *:text-base *:font-inter *:font-medium *:text-[#030712]"
+                >
+                  <div>Discount</div>
+                  <div>
+                    <p>BDT <span id="discount">0</span></p>
+                  </div>
+                </div>
                 <!-- grand-total -->
                 <div
-                  class="grand-total-section flex justify-between px-2 py-2 *:text-base *:font-inter *:font-medium *:text-[#030712]"
+                  class="grand-total-section mt-6 flex justify-between px-2 py-2 *:text-base *:font-inter *:font-medium *:text-[#030712]"
                 >
                   <div>Grand Price</div>
                   <div>
-                    <p>BDT <span>1100</span></p>
+                    <p>BDT <span id="grand-total">0</span></p>
                   </div>
                 </div>
               </div>
@@ -580,7 +590,7 @@
       </section>
     </main>
     <footer></footer>
-    <script src="js/common.js"></script>
-    <!-- <script src="js/test.js"></script> -->
+    <!-- <script src="js/common.js"></script> -->
+    <script src="js/test.js"></script>
   </body>
 </html>

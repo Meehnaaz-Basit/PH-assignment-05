@@ -2,6 +2,9 @@ let selectedSeats = 0;
 let availableSeats = 8;
 const maxSelectedSeats = 4;
 let ticketPrice = 550;
+let totalPrice = 0;
+let grandTotal = 0;
+let discountPrice = 0;
 
 // Get all seat buttons
 const seatButtons = document.getElementsByClassName("seat-btn");
@@ -67,6 +70,18 @@ for (const seatButton of seatButtons) {
     // append data
     tBody.appendChild(tr);
 
+    // Total price update
+    totalPrice = totalPrice + ticketPrice;
+    const price = document.getElementById("total-price");
+    price.innerText = totalPrice;
+    // console.log(typeof totalPrice, totalPrice);
+
+    // discount price update
+
+    // grand total price update
+    grandTotal = totalPrice - discountPrice;
+    const grandTotalPrice = document.getElementById("grand-total");
+    grandTotalPrice.innerText = grandTotal;
     // Alert if no seats are available
     if (availableSeats < 0) {
       alert("No seat is available");
