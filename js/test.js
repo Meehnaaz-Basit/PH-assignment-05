@@ -38,7 +38,7 @@ for (const seatButton of seatButtons) {
           remainingSeatButton.setAttribute("disabled", true);
         }
       }
-      alert("Now you have reached the maximum number of tickets (4).");
+      alert("You have reached the maximum number of tickets (4).");
     }
 
     // table data cell update///
